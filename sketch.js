@@ -1,4 +1,4 @@
-
+//pro porque a corda n pegou gravidade
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
@@ -17,6 +17,9 @@ function preload(){
 
 function setup() {
   createCanvas(400,400);
+
+  engine = Engine.create();
+  world = engine.world;
 
   engine = Engine.create();
   world = engine.world;
